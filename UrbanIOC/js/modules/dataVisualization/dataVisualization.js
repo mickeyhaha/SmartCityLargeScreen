@@ -596,7 +596,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					})
 				}],
 				yAxis: [{
-					name: '车流量',
+					name: '清运车辆',
 					type: 'value',
 					max: 500,
 					nameTextStyle: {
@@ -623,7 +623,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					}
 				}],
 				series: [{
-					name: '车流量',
+					name: '清运车辆',
 					type: 'line',
 					animation: false,
 					areaStyle: {
@@ -702,19 +702,19 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 				function getStatues(AreaCarNumOne) {
 					var status = ['']
 					if (AreaCarNumOne >= 40) {
-						status[0] = '<p  style="margin: 0px;color:green">空置</p>'
+						status[0] = '<p  style="margin: 0px;color:green">满溢</p>'
 							// status[1]=(Math.random()*20+50).toFixed(1)
 					} else if (AreaCarNumOne >= 35 && AreaCarNumOne < 40) {
-						status[0] = '<p  style="margin: 0px;color:	#AFEEEE">基本空置</p>'
+						status[0] = '<p  style="margin: 0px;color:	#AFEEEE">基本满溢</p>'
 							// status[1]=(Math.random()*10+40).toFixed(1)
 					} else if (AreaCarNumOne >= 30 && AreaCarNumOne < 35) {
 						status[0] = '<p  style="margin: 0px;color:gray">正常</p>'
 							// status[1]=(Math.random()*10+30).toFixed(1)
 					} else if (AreaCarNumOne >= 25 && AreaCarNumOne < 30) {
-						status[0] = '<p  style="margin: 0px;color:orange">较为满溢</p>'
+						status[0] = '<p  style="margin: 0px;color:orange">较为空置</p>'
 							// status[1]=(Math.random()*10+20).toFixed(1)
 					} else if (AreaCarNumOne < 25) {
-						status[0] = '<p style="margin: 0px;color:red">满溢</p>'
+						status[0] = '<p style="margin: 0px;color:red">空置</p>'
 							// status[1]=(Math.random()*10+10).toFixed(1)
 					}
 					return status;
@@ -834,7 +834,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '<div class="graph-title" id="graph-title-safe">'
 			html += '<div style="width: 70%;  float: left;">'
 			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">垃圾容量趋势</p>'
-			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">Water and Rainfall</span>'
+			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">Cabin Fill Rate</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
 			html += '<a href="citySafe.html" id="LinktoSafe"><img src="images/configure05.png" id="linksafe" style="float: right;"></a>'
