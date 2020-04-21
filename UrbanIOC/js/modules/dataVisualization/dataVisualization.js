@@ -189,7 +189,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '<div class="graph-title" id="graph-title-traffic">'
 			html += '<div style="width: 70%;  float: left;">'
 			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">垃圾空满率</p>'
-			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">City Traffic</span>'
+			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">Fill rate</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
 			html += '<a href="cityTraffic.html"  id="LinktoTraffic"><img src="images/configure05.png" id="linktraffic" style="float: right;"></a>'
@@ -780,13 +780,13 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '<div class="graph-title" id="graph-title-case">'
 			html += '<div style="width: 70%;  float: left;">'
 			html += '<p class="graph-brand-text"  style="font-size:16px;margin-bottom:3px">清运规划</p>'
-			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">City Cases</span>'
+			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">Truck Router</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
 			html += '<a href="cityCase.html"  id="LinktoCase"><img src="images/configure05.png" id="linkcase" style="float: right;"></a>'
 			html += '</div>'
 			html += '</div>'
-
+/*
 			html += '<div style="width: 100%; height: 15%;">'
 			html += '<div class="col-sm-12">'
 
@@ -805,11 +805,6 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '</div>'
 			html += '</div>'
 
-
-			// html += '<div class="graph-title">'
-			// html += '<span class="graph-brand-text">清运规划占比统计</span>'
-			// html += '<span class="graph-brand-subtext">2016年8月31日</span>'
-			// html += '</div>'
 			html += '<div id="statusupdate">'
 			html += '<div class="xe-widget xe-status-update" data-auto-switch="3">'
 			html += '<div class="xe-body"> '
@@ -824,7 +819,6 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '</p>'
 			html += '</li>'
 			html += '<li class="listitem active" style="opacity: 1;" lon="-118.244" lat="34.057">'
-				// html += '<span class="status-date">新增积水点</span>'
 			html += '<p>在北希尔街附近发现一辆红色福特车停靠在人行道上，车牌号为：F246K8，目前该车辆已被拖至车管所。'
 			html += '</p>'
 			html += '</li>'
@@ -832,7 +826,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '</div>'
 			html += '</div>'
 			html += '</div>'
-
+*/
 
 			html += '<div style="width:100%;height:25%;margin-top:20px;margin-bottom:20px" id="rightChartOne">'
 			html += '</div>'
