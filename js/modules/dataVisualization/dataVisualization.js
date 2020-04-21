@@ -702,19 +702,19 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 				function getStatues(AreaCarNumOne) {
 					var status = ['']
 					if (AreaCarNumOne >= 40) {
-						status[0] = '<p  style="margin: 0px;color:green">满溢</p>'
+						status[0] = '<p  style="margin: 0px;color:red">满溢</p>'
 							// status[1]=(Math.random()*20+50).toFixed(1)
 					} else if (AreaCarNumOne >= 35 && AreaCarNumOne < 40) {
-						status[0] = '<p  style="margin: 0px;color:	#AFEEEE">基本满溢</p>'
+						status[0] = '<p  style="margin: 0px;color:orange">基本满溢</p>'
 							// status[1]=(Math.random()*10+40).toFixed(1)
 					} else if (AreaCarNumOne >= 30 && AreaCarNumOne < 35) {
 						status[0] = '<p  style="margin: 0px;color:gray">正常</p>'
 							// status[1]=(Math.random()*10+30).toFixed(1)
 					} else if (AreaCarNumOne >= 25 && AreaCarNumOne < 30) {
-						status[0] = '<p  style="margin: 0px;color:orange">较为空置</p>'
+						status[0] = '<p  style="margin: 0px;color:#AFEEEE">较为空置</p>'
 							// status[1]=(Math.random()*10+20).toFixed(1)
 					} else if (AreaCarNumOne < 25) {
-						status[0] = '<p style="margin: 0px;color:red">空置</p>'
+						status[0] = '<p style="margin: 0px;color:green">空置</p>'
 							// status[1]=(Math.random()*10+10).toFixed(1)
 					}
 					return status;
