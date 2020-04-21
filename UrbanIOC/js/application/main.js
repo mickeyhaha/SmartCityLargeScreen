@@ -36,7 +36,7 @@ define(
         _init: function() {
             var w = this;
             w._setDefaultOptions();
-            w._showWelcome()
+            //w._showWelcome()
         },
         _setDefaultOptions: function() {
             var w = this;
@@ -147,7 +147,7 @@ define(
         _showWelcome: function() {
             var w = this;
             var y = '<h3 class="animated_text">Intelligent Operation Center</h3>';
-            y += '<h2 class="title opacity0">智慧城市综合运营管理中心</h2>';
+            y += '<h2 class="title opacity0">智慧城市垃圾回收运营管理中心</h2>';
             y += '<ul class="list-inline logo-list opacity0"><li><a href="http://www.esrichina-bj.cn/" target="_blank"><img src="images/esri.png"/></a></li><li><a href="http://www.huawei.com/cn/" target="_blank"><img src="images/huawei.png"/></a></li></ul>';
             var x = { size: 120, weight: 8, color: ["#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8"], duration: 0.35, delay: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4], fade: 0.35, individualDelays: true, easing: d3_ease.easeSinInOut.ease };
             $(".page-overlay").html(y);
