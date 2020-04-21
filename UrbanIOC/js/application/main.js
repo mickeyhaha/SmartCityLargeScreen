@@ -152,11 +152,12 @@ define(
             var x = { size: 120, weight: 8, color: ["#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#E77826", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8", "#f8f8f8"], duration: 0.35, delay: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4], fade: 0.35, individualDelays: true, easing: d3_ease.easeSinInOut.ease };
             $(".page-overlay").html(y);
             var z = new Letters($(".animated_text")[0], x);
+            /*
             z.show();
             setTimeout(function() {
                 $(".title").addClass("animated bounceIn");
                 $(".logo-list").addClass("animated fadeInUp")
-            }, 2800);
+            }, 2800);*/
             setTimeout(function() {
                 w._initMap();
                 w._hideWelcome();
