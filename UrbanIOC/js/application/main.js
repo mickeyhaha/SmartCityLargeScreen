@@ -36,7 +36,7 @@ define(
         _init: function() {
             var w = this;
             w._setDefaultOptions();
-            //w._showWelcome()
+            w._showWelcome()
         },
         _setDefaultOptions: function() {
             var w = this;
