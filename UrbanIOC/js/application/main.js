@@ -157,14 +157,12 @@ define(
             setTimeout(function() {
                 $(".title").addClass("animated bounceIn");
                 $(".logo-list").addClass("animated fadeInUp")
-            }, 2800);*/
-            setTimeout(function() {
+            }, 2800);*/ 
                 w._initMap();
                 w._hideWelcome();
                 w._showClock();
                 w._initTOC();
-                w._initWeatherPart()
-            }, 4500)
+                w._initWeatherPart();
         },
         _showClock: function() {
             setInterval(function() {
