@@ -883,7 +883,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					}
 				}],
 				series: [{
-					name: '事件总数',
+					name: '清运车辆',
 					type: 'bar',
 					barWidth: '40%',
 					data: [{
