@@ -114,7 +114,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					tilt: 0
 				}).then(function() {
 					_self.view.popup.open({
-						title: "城市事件",
+						title: "清运规划",
 						content: "<p>" + message + "</p>",
 						location: point
 					})
@@ -135,7 +135,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					tilt: 0
 				}).then(function() {
 					_self.view.popup.open({
-						title: "城市事件",
+						title: "清运规划",
 						content: "<p>" + message + "</p>",
 						location: point
 					})
@@ -152,7 +152,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					// .then(function() {});
 					// _self.view.popup.open({
 					// title: data.split("~")[2],
-					// content: "<p>城市事件：" + data.split("~")[1] + "</p><p>发生时间：" + data.split("~")[0] + "</p><p>事件类型：" + data.split("~")[3] + "</p><p>城镇街道：" + data.split("~")[4] + "</p><p>事件地点：" + data.split("~")[5] + "</p>",
+					// content: "<p>清运规划：" + data.split("~")[1] + "</p><p>发生时间：" + data.split("~")[0] + "</p><p>事件类型：" + data.split("~")[3] + "</p><p>城镇街道：" + data.split("~")[4] + "</p><p>事件地点：" + data.split("~")[5] + "</p>",
 					// location: result.features[0].geometry // Set the location of the popup to the clicked location
 					// }); 
 			});
@@ -188,7 +188,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 
 			html += '<div class="graph-title" id="graph-title-traffic">'
 			html += '<div style="width: 70%;  float: left;">'
-			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">城市交通</p>'
+			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">垃圾空满率</p>'
 			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">City Traffic</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
@@ -202,11 +202,11 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '</div>'
 
 			html += '<div style="width: 50%; height: 20px;float: left;text-align: center;">'
-			html += '<span style="font-size: 14px;color: #fff;">平均拥堵指数'
+			html += '<span style="font-size: 14px;color: #fff;">平均空满率'
 			html += '</span>'
 			html += '</div>'
 			html += '<div style="width: 50%; height: 20px;float: left;text-align: center;">'
-			html += '<span style="font-size: 14px;color: #fff;">实时拥堵指数'
+			html += '<span style="font-size: 14px;color: #fff;">实时空满率'
 			html += '</span>'
 			html += '</div>'
 			html += '</div>'
@@ -216,57 +216,57 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 			html += '<tbody>';
 			html += '<tr lon="-118.266" lat="34.043" style="cursor: pointer;">';
 			html += '<td>Figueroa Street</td>';
-			html += '<td id="AreaOneStatus">畅通</td>';
+			html += '<td id="AreaOneStatus">空</td>';
 			html += '<td id="AreaOneAvgSpeed"><p  style="margin: 0px;color:green">54.3</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.248" lat="34.049" style="cursor: pointer;">';
 			html += '<td>South Spring Street</td>';
-			html += '<td id="AreaTwoStatus">基本畅通</td>';
+			html += '<td id="AreaTwoStatus">较空</td>';
 			html += '<td id="AreaTwoAvgSpeed"><p  style="margin: 0px;color:gray">34.4</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.244" lat="34.057" style="cursor: pointer;">';
 			html += '<td >North Hill Street</td>';
-			html += '<td id="AreaThreeStatus">缓行</td>';
+			html += '<td id="AreaThreeStatus">较满</td>';
 			html += '<td id="AreaThreeAvgSpeed"><p  style="margin: 0px;color:orange">25.5</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.239" lat="34.021" style="cursor: pointer;">';
 			html += '<td >Alameda Street</td>';
-			html += '<td id="AreaFourStatus">拥堵</td>';
+			html += '<td id="AreaFourStatus">很满</td>';
 			html += '<td id="AreaFourAvgSpeed"><p  style="margin: 0px;color:red">10</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.234" lat="34.05" style="cursor: pointer;">';
 			html += '<td>Temple Street</td>';
-			html += '<td id="AreaFiveStatus">畅通</td>';
+			html += '<td id="AreaFiveStatus">已满</td>';
 			html += '<td id="AreaFiveAvgSpeed"><p  style="margin: 0px;color:green">54.3</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.231" lat="34.059 style="cursor: pointer;"">';
 			html += '<td>Bauchet Street</td>';
-			html += '<td id="AreaSixStatus">基本畅通</td>';
+			html += '<td id="AreaSixStatus">很满</td>';
 			html += '<td id="AreaSixAvgSpeed"><p  style="margin: 0px;color:gray">34.4</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.225" lat="34.055" style="cursor: pointer;">';
 			html += '<td >Mission Road</td>';
-			html += '<td id="AreaSevenStatus">缓行</td>';
+			html += '<td id="AreaSevenStatus">较满</td>';
 			html += '<td id="AreaSevenAvgSpeed"><p  style="margin: 0px;color:orange">25.5</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.263" lat="34.027" style="cursor: pointer;">';
 			html += '<td >Maple Avenue</td>';
-			html += '<td id="AreaEightStatus">拥堵</td>';
+			html += '<td id="AreaEightStatus">较空</td>';
 			html += '<td id="AreaEightAvgSpeed"><p  style="margin: 0px;color:red">10</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.225" lat="34.032" style="cursor: pointer;">';
 			html += '<td>South Mission Road</td>';
-			html += '<td id="AreaNineStatus">畅通</td>';
+			html += '<td id="AreaNineStatus">较满</td>';
 			html += '<td id="AreaNineAvgSpeed"><p  style="margin: 0px;color:green">54.3</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.234" lat="34.013" style="cursor: pointer;">';
 			html += '<td>East 27th Street</td>';
-			html += '<td id="AreaTenStatus">基本畅通</td>';
+			html += '<td id="AreaTenStatus">满溢</td>';
 			html += '<td id="AreaTenAvgSpeed"><p  style="margin: 0px;color:gray">34.4</p></td>';
 			html += '</tr>';
 			html += '<tr lon="-118.216" lat="34.032" style="cursor: pointer;">';
 			html += '<td >East 7th Street</td>';
-			html += '<td id="AreaElevenStatus">缓行</td>';
+			html += '<td id="AreaElevenStatus">较满</td>';
 			html += '<td id="AreaElevenAvgSpeed"><p  style="margin: 0px;color:orange">25.5</p></td>';
 			html += '</tr>';
 
@@ -511,7 +511,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 					}
 				},
 				legend: {
-					data: ['车流量', '降雨量'],
+					data: ['公共流量', '社区流量'],
 					// x: 'left',
 					left: 'center',
 					textStyle: {
@@ -731,27 +731,27 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 				var itemstatusTen = getStatues(parseInt(AreaCarNum[9]))
 				var itemstatusEleven = getStatues(parseInt(AreaCarNum[10]))
 				$("#AreaOneStatus").html(itemstatusOne[0])
-				$("#AreaOneAvgSpeed").html(AreaCarNum[0] + 'km/h')
+				$("#AreaOneAvgSpeed").html(AreaCarNum[0] + 'L')
 				$("#AreaTwoStatus").html(itemstatusTwo[0])
-				$("#AreaTwoAvgSpeed").html(AreaCarNum[1] + 'km/h')
+				$("#AreaTwoAvgSpeed").html(AreaCarNum[1] + 'L')
 				$("#AreaThreeStatus").html(itemstatusThree[0])
-				$("#AreaThreeAvgSpeed").html(AreaCarNum[2] + 'km/h')
+				$("#AreaThreeAvgSpeed").html(AreaCarNum[2] + 'L')
 				$("#AreaFourStatus").html(itemstatusFour[0])
-				$("#AreaFourAvgSpeed").html(AreaCarNum[3] + 'km/h')
+				$("#AreaFourAvgSpeed").html(AreaCarNum[3] + 'L')
 				$("#AreaFiveStatus").html(itemstatusFive[0])
-				$("#AreaFiveAvgSpeed").html(AreaCarNum[4] + 'km/h')
+				$("#AreaFiveAvgSpeed").html(AreaCarNum[4] + 'L')
 				$("#AreaSixStatus").html(itemstatusSix[0])
-				$("#AreaSixAvgSpeed").html(AreaCarNum[5] + 'km/h')
+				$("#AreaSixAvgSpeed").html(AreaCarNum[5] + 'L')
 				$("#AreaSevenStatus").html(itemstatusSeven[0])
-				$("#AreaSevenAvgSpeed").html(AreaCarNum[6] + 'km/h')
+				$("#AreaSevenAvgSpeed").html(AreaCarNum[6] + 'L')
 				$("#AreaEightStatus").html(itemstatusEight[0])
-				$("#AreaEightAvgSpeed").html(AreaCarNum[7] + 'km/h')
+				$("#AreaEightAvgSpeed").html(AreaCarNum[7] + 'L')
 				$("#AreaNineStatus").html(itemstatusNine[0])
-				$("#AreaNineAvgSpeed").html(AreaCarNum[8] + 'km/h')
+				$("#AreaNineAvgSpeed").html(AreaCarNum[8] + 'L')
 				$("#AreaTenStatus").html(itemstatusTen[0])
-				$("#AreaTenAvgSpeed").html(AreaCarNum[9] + 'km/h')
+				$("#AreaTenAvgSpeed").html(AreaCarNum[9] + 'L')
 				$("#AreaElevenStatus").html(itemstatusEleven[0])
-				$("#AreaElevenAvgSpeed").html(AreaCarNum[10] + 'km/h')
+				$("#AreaElevenAvgSpeed").html(AreaCarNum[10] + 'L')
 					// _self.numchange = new numchange('numchange');
 					// _self.numchange = new numchange('numchange2');
 					// $('#aa').html((Math.random()*20+60).toFixed(0))
@@ -779,7 +779,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 
 			html += '<div class="graph-title" id="graph-title-case">'
 			html += '<div style="width: 70%;  float: left;">'
-			html += '<p class="graph-brand-text"  style="font-size:16px;margin-bottom:3px">城市事件</p>'
+			html += '<p class="graph-brand-text"  style="font-size:16px;margin-bottom:3px">清运规划</p>'
 			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">City Cases</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
@@ -807,7 +807,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 
 
 			// html += '<div class="graph-title">'
-			// html += '<span class="graph-brand-text">城市事件占比统计</span>'
+			// html += '<span class="graph-brand-text">清运规划占比统计</span>'
 			// html += '<span class="graph-brand-subtext">2016年8月31日</span>'
 			// html += '</div>'
 			html += '<div id="statusupdate">'
@@ -839,7 +839,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 
 			html += '<div class="graph-title" id="graph-title-safe">'
 			html += '<div style="width: 70%;  float: left;">'
-			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">水雨情</p>'
+			html += '<p class="graph-brand-text" style="font-size:16px;margin-bottom:3px">垃圾容量趋势</p>'
 			html += '<span class="graph-brand-subtext" style="font-size:12px;color:#999">Water and Rainfall</span>'
 			html += '</div>'
 			html += '<div style="width:30%;float:left;margin-top: 15px;">'
