@@ -702,19 +702,19 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 				function getStatues(AreaCarNumOne) {
 					var status = ['']
 					if (AreaCarNumOne >= 40) {
-						status[0] = '<p  style="margin: 0px;color:green">畅通</p>'
+						status[0] = '<p  style="margin: 0px;color:green">空置</p>'
 							// status[1]=(Math.random()*20+50).toFixed(1)
 					} else if (AreaCarNumOne >= 35 && AreaCarNumOne < 40) {
-						status[0] = '<p  style="margin: 0px;color:	#AFEEEE">基本畅通</p>'
+						status[0] = '<p  style="margin: 0px;color:	#AFEEEE">基本空置</p>'
 							// status[1]=(Math.random()*10+40).toFixed(1)
 					} else if (AreaCarNumOne >= 30 && AreaCarNumOne < 35) {
-						status[0] = '<p  style="margin: 0px;color:gray">缓行</p>'
+						status[0] = '<p  style="margin: 0px;color:gray">正常</p>'
 							// status[1]=(Math.random()*10+30).toFixed(1)
 					} else if (AreaCarNumOne >= 25 && AreaCarNumOne < 30) {
-						status[0] = '<p  style="margin: 0px;color:orange">较为拥堵</p>'
+						status[0] = '<p  style="margin: 0px;color:orange">较为满溢</p>'
 							// status[1]=(Math.random()*10+20).toFixed(1)
 					} else if (AreaCarNumOne < 25) {
-						status[0] = '<p style="margin: 0px;color:red">拥堵</p>'
+						status[0] = '<p style="margin: 0px;color:red">满溢</p>'
 							// status[1]=(Math.random()*10+10).toFixed(1)
 					}
 					return status;
@@ -872,7 +872,7 @@ define('modules/dataVisualization/dataVisualization', ['widgets/extension/status
 
 				yAxis: [{
 					type: 'category',
-					data: ['其他事件', '黑车拉客', '施工占道', '无照经营', '胡乱停放'],
+					data: ['上城区', '滨江区', '场口区', '富春区', '体育馆'],
 					axisTick: {
 						alignWithLabel: true
 					},
